@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample.UWP", "FFmpegS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample", "FFmpegSample\FFmpegSample\FFmpegSample.csproj", "{5C9D499C-A975-440C-94F9-8BE308D27112}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample.MacOS", "FFmpegSample\FFmpegSample.MacOS\FFmpegSample.MacOS.csproj", "{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,22 @@ Global
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Release|x86.ActiveCfg = Release|Any CPU
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Release|x86.Build.0 = Release|Any CPU
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Release|x86.Deploy.0 = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|ARM.Build.0 = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|ARM.Build.0 = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|x64.Build.0 = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample.UWP", "FFmpegSample\FFmpegSample.UWP\FFmpegSample.UWP.csproj", "{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample", "FFmpegSample\FFmpegSample\FFmpegSample.csproj", "{5C9D499C-A975-440C-94F9-8BE308D27112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFmpegSample", "FFmpegSample\FFmpegSample\FFmpegSample.csproj", "{5C9D499C-A975-440C-94F9-8BE308D27112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpegSample.MacOS", "FFmpegSample\FFmpegSample.MacOS\FFmpegSample.MacOS.csproj", "{AFABC7C5-647F-4A1B-92D5-05D0706F3B7C}"
 EndProject
@@ -21,30 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|Any CPU.Build.0 = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|Any CPU.Deploy.0 = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|ARM.ActiveCfg = Debug|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|ARM.Build.0 = Debug|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|ARM.Deploy.0 = Debug|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x64.ActiveCfg = Debug|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x64.Build.0 = Debug|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x64.Deploy.0 = Debug|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x86.ActiveCfg = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x86.Build.0 = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Debug|x86.Deploy.0 = Debug|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|Any CPU.ActiveCfg = Release|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|Any CPU.Build.0 = Release|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|Any CPU.Deploy.0 = Release|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|ARM.ActiveCfg = Release|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|ARM.Build.0 = Release|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|ARM.Deploy.0 = Release|ARM
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x64.ActiveCfg = Release|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x64.Build.0 = Release|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x64.Deploy.0 = Release|x64
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x86.ActiveCfg = Release|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x86.Build.0 = Release|x86
-		{6B53FF15-407D-4AE1-A5CC-DEADC1914FAD}.Release|x86.Deploy.0 = Release|x86
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9D499C-A975-440C-94F9-8BE308D27112}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

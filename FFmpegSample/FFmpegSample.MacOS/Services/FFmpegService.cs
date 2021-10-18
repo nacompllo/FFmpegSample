@@ -1,7 +1,9 @@
-﻿using FFmpegSample.Services;
+﻿using FFmpegSample.MacOS.Services;
+using FFmpegSample.Services;
 using Foundation;
 using System;
 
+[assembly: Xamarin.Forms.Dependency(typeof(FFmpegService))]
 namespace FFmpegSample.MacOS.Services
 {
     public class FFmpegService : IFFmpegService

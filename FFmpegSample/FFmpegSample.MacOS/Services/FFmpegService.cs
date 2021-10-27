@@ -9,8 +9,6 @@ namespace FFmpegSample.MacOS.Services
 {
     public class FFmpegService : IFFmpegService
     {
-        //private const string macosFfmpegBinarySource = @"../../../../GithubActionsHelloWorld/ffmpebBins/macos64/";
-
         public async Task ExecuteFFmpeg(string inputFilePath, string outputFilePath)
         {
             await FfmpegRemoveAudio(await CalcOsSpecificFfmpegPathAsync(), inputFilePath, outputFilePath);

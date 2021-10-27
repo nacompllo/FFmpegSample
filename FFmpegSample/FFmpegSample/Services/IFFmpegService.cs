@@ -4,6 +4,6 @@ namespace FFmpegSample.Services
 {
     public interface IFFmpegService
     {
-        void ExecuteFFmpeg();
+        Task ExecuteFFmpeg(string inputFilePath, string outputFilePath);
     }
 }

@@ -1,29 +1,40 @@
 ﻿using FFmpegSample.MacOS.Services;
 using FFmpegSample.Services;
-using Foundation;
-using System;
+using CliWrap;
+using System.IO;
+using System.Threading.Tasks;
 
 [assembly: Xamarin.Forms.Dependency(typeof(FFmpegService))]
 namespace FFmpegSample.MacOS.Services
 {
     public class FFmpegService : IFFmpegService
     {
-        public void ExecuteFFmpeg()
-        {
-            try
-            {
-                var launchPath = NSBundle.MainBundle.PathForResource("ffmpeg", ofType: "");
-                var compressTask = new NSTask();
-                compressTask.LaunchPath = launchPath;
-                compressTask.Arguments = new string[] { "ffmpeg -i downloads/tyson.mp4 -c copy -an onlyaudio.mp4" };
-                compressTask.StandardInput = NSFileHandle.FromNullDevice();
-                compressTask.Launch();
-                compressTask.WaitUntilExit();
-            }
-            catch (Exception ex)
-            {
+        //private const string macosFfmpegBinarySource = @"../../../../GithubActionsHelloWorld/ffmpebBins/macos64/";
 
-            }
+        public async Task ExecuteFFmpeg(string inputFilePath, string outputFilePath)
+        {
+            await FfmpegRemoveAudio(await CalcOsSpecificFfmpegPathAsync(), inputFilePath, outputFilePath);
+        }
+
+        private static async Task<string> CalcOsSpecificFfmpegPathAsync()
+        {
+            var macosFfmpegBinarySource = App.ResourcePath + "/ffmpegBins/macos64/";
+            macosFfmpegBinarySource = macosFfmpegBinarySource.Replace("file://", "");
+            var ffmpegExecutable = Path.Combine(macosFfmpegBinarySource, "ffmpeg");
+
+            await SetPermissionsAsync(ffmpegExecutable, "+x");
+
+            return ffmpegExecutable;
+        }
+
+        public static async ValueTask SetPermissionsAsync(string filePath, string permissions)
+        {
+            await Cli.Wrap("/bin/bash").WithArguments(new[] { "-c", $"chmod {permissions} {filePath}" }).ExecuteAsync();
+        }
+
+        public static async ValueTask FfmpegRemoveAudio(string ffmpegPath, string inputFilePath, string outputFilePath)
+        {
+            await Cli.Wrap(ffmpegPath).WithArguments(new[] { "-i", inputFilePath, "-c", "copy", "-an", outputFilePath }).ExecuteAsync();
         }
     }
 }

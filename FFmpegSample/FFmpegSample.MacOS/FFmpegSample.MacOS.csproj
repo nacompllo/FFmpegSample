@@ -51,6 +51,9 @@
     </HttpClientHandler>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CliWrap, Version=3.3.3.0, Culture=neutral, PublicKeyToken=1c4a4fc2d6886e5a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CliWrap.3.3.3\lib\netstandard2.1\CliWrap.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -87,7 +90,17 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <Content Include="Resources\ffmpeg" />
+    <Content Include="Resources\ffmpegBins\macos64\ffmpeg" />
+    <Content Include="Resources\ffmpegBins\macos64\ffplay" />
+    <Content Include="Resources\ffmpegBins\macos64\ffprobe" />
+    <Content Include="Resources\ffmpegBins\macos64\libavcodec.58.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libavdevice.58.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libavfilter.7.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libavformat.58.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libavutil.56.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libpostproc.55.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libswresample.3.dylib" />
+    <Content Include="Resources\ffmpegBins\macos64\libswscale.5.dylib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

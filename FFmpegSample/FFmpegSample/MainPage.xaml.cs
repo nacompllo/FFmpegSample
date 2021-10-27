@@ -21,7 +21,7 @@ namespace FFmpegSample
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            _fFmpegService.ExecuteFFmpeg();
+            _fFmpegService.ExecuteFFmpeg("inputFilePathSample", "outputFilePathSample");
         }
     }
 }

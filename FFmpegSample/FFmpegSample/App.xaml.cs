@@ -6,6 +6,8 @@ namespace FFmpegSample
 {
     public partial class App : Application
     {
+        public static string ResourcePath;
+
         public App()
         {
             InitializeComponent();

@@ -17,7 +17,7 @@ namespace FFmpegSample.MacOS
             window = new NSWindow(rect, style, NSBackingStore.Buffered, false);
             window.Title = "Xamarin.Forms on Mac!"; // choose your own Title here
             window.TitleVisibility = NSWindowTitleVisibility.Hidden;
-            App.ResourcePath = new NSUrl(NSBundle.MainBundle.ResourcePath, false).AbsoluteString;
+            App.ResourcePath = NSBundle.MainBundle.ResourcePath;
         }
 
         public override NSWindow MainWindow

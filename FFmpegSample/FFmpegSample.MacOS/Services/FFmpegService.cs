@@ -19,7 +19,6 @@ namespace FFmpegSample.MacOS.Services
         private static async Task<string> CalcOsSpecificFfmpegPathAsync()
         {
             var macosFfmpegBinarySource = App.ResourcePath + "/ffmpegBins/macos64/";
-            macosFfmpegBinarySource = macosFfmpegBinarySource.Replace("file://", "");
             var ffmpegExecutable = Path.Combine(macosFfmpegBinarySource, "ffmpeg");
 
             await SetPermissionsAsync(ffmpegExecutable, "+x");
